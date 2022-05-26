@@ -2,9 +2,8 @@
 A simple command-line parser for .NET. Supports both long and short named options, including flags.
 
 
-## Sample 1
+## Sample 1: Parsing command-line arguments
 ```csharp
-// A short sample of how to parse command-line arguments using CLI-Parser.cs.
 private static void ParseArguments(string[] args)
 {
     if (CLI.Parse(args) == 1)
@@ -35,9 +34,8 @@ private static void ParseArguments(string[] args)
 ```
 
 
-## Sample 2
+## Sample 2: Parsing command-line arguments using events.
 ```csharp
-// Parsing command-line arguments wth CLI-Parser.cs using events.
 private static void ParseArguments(string[] args)
 {
     CLI.OnParse += CLI_OnParse;

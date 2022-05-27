@@ -2,7 +2,7 @@
 A simple command-line parser for .NET. Supports both long and short named options, including flags.
 
 ## Samples
-### Parsing command-line arguments:
+### 1. Parsing command-line arguments
 ```csharp
 private static void ParseArguments(string[] args)
 {
@@ -33,7 +33,7 @@ private static void ParseArguments(string[] args)
 }
 ```
 
-### Parsing command-line arguments using events:
+### 2. Parsing command-line arguments using events
 ```csharp
 private static void ParseArguments(string[] args)
 {

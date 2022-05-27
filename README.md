@@ -1,7 +1,7 @@
 # Command-line Parser
 A simple command-line parser for .NET. Supports both long and short named options, including flags.
 
-**Syntax:** `--option value`&ensp;`-o value`&ensp;`--flag`  
+**Syntax:** `--option value`&ensp;`-o value`&ensp;`--flag`&ensp;`-f`  
 
 ## Samples
 ### 1. Parsing command-line arguments

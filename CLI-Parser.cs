@@ -1,5 +1,6 @@
-// INI File Parser for .NET
-// Copyright (c) 2022 konome - MIT License
+// Command-line Parser for .NET
+// Copyright (c) 2022 konome
+// MIT License
 
 using System;
 using System.Collections.Generic;

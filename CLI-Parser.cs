@@ -1,4 +1,4 @@
-// Command-line Parser for .NET
+// CLI-Parser - Command-line Parser for .NET
 // Copyright (c) 2022 konome
 // MIT License
 

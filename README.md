@@ -36,7 +36,7 @@ private static void ParseArguments(string[] args)
 }
 ```
 
-### 2. Parsing command-line arguments using events
+### 2. Parsing command-line arguments using events (recommended)
 ```csharp
 private static void ParseArguments(string[] args)
 {

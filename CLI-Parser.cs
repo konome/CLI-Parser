@@ -20,7 +20,7 @@ namespace Konome
         {
             //0: Success, 1: Error, 2: Empty array.
             int errLvl = 2;
-            
+
             _options.Clear();
 
             if (args.Length > 0)
@@ -44,7 +44,7 @@ namespace Konome
                 // Validate option.
                 if (args[i].Length < 2)
                     return RaiseError("Option length too short.");
-                if (args[i][..2] != "--" && args[i][..1] != "-")
+                if ((args[i][..2] != "--" && args[i][..1] != "-") || (args[i].Length > 2  && args[i][..3] == "---"))
                     return RaiseError("Options must have the '--' prefix. Use a singular dash for short named options.");
                 if (args[i][..1] == "-" && args[i].Length > 2 && args[i][..2] != "--")
                     return RaiseError("Short named options may only have one character.");
@@ -60,10 +60,10 @@ namespace Konome
                     bflag = true;
                 if (!bflag && args[i + 1].Length >= 2 && args[i + 1][..1] == "-")
                     bflag = true;
-                if(!bflag && !ValidateString(args[i + 1][..1]))
+                if (!bflag && !ValidateString(args[i + 1][..1]))
                     return RaiseError("Invalid parameter.");
 
-                if(bflag)
+                if (bflag)
                     _options.Add(args[i], string.Empty);
                 else
                     _options.Add(args[i], args[++i]);
